@@ -33,6 +33,7 @@ function App() {
 
       <main id="hem">
         <div className="hero-layout">
+          <img className="hero-background" src="/images/butterfly-event.jpg" alt="" width="1536" height="1024" fetchPriority="high" />
         <section className="welcome" aria-labelledby="welcome-title">
           <div className="hero-arch" aria-hidden="true" />
           <p className="eyebrow">Med kärlek för detaljer · Stockholm</p>
@@ -52,10 +53,6 @@ function App() {
           </a>
           <p className="instagram-handle">@melanie.event</p>
         </section>
-        <figure className="hero-photo">
-          <img src="/images/butterfly-event.jpg" alt="Inspirationsmiljö med ballongbåge i creme och salvia, blommor och en stor dekorativ fjäril." width="1536" height="1024" fetchPriority="high" />
-          <figcaption>En känsla att minnas</figcaption>
-        </figure>
         </div>
         <div className="occasion-strip" aria-label="Tillfällen att fira">
           <span>Babyshower</span><span aria-hidden="true">✧</span>
