@@ -33,7 +33,7 @@ function App() {
 
       <main id="hem">
         <div className="hero-layout">
-          <img className="hero-background" src="/images/butterfly-event.jpg" alt="" width="1536" height="1024" fetchPriority="high" />
+          <img className="hero-background" src={`${import.meta.env.BASE_URL}images/butterfly-event.jpg`} alt="" width="1536" height="1024" fetchPriority="high" />
         <section className="welcome" aria-labelledby="welcome-title">
           <div className="hero-arch" aria-hidden="true" />
           <p className="eyebrow">Med kärlek för detaljer · Stockholm</p>
@@ -70,7 +70,7 @@ function App() {
           </div>
           <div className="service-grid">
             <article className="service-card">
-              <img src="/images/table-styling.jpg" alt="Inspirationsdukning med rosor, levande ljus, linneservetter och guldfärgade bestick." width="1536" height="1024" loading="lazy" />
+              <img src={`${import.meta.env.BASE_URL}images/table-styling.jpg`} alt="Inspirationsdukning med rosor, levande ljus, linneservetter och guldfärgade bestick." width="1536" height="1024" loading="lazy" />
               <div className="service-copy">
                 <span className="service-number">01 / DEKORATION</span>
                 <h3>En personlig inramning</h3>
@@ -78,7 +78,7 @@ function App() {
               </div>
             </article>
             <article className="service-card">
-              <img src="/images/photo-experience.jpg" alt="Inspirationsmiljö för fotografering med en stor cremefärgad ram, blommor och en salviagrön bakgrund." width="1536" height="1024" loading="lazy" />
+              <img src={`${import.meta.env.BASE_URL}images/photo-experience.jpg`} alt="Inspirationsmiljö för fotografering med en stor cremefärgad ram, blommor och en salviagrön bakgrund." width="1536" height="1024" loading="lazy" />
               <div className="service-copy">
                 <span className="service-number">02 / FOTOUPPLEVELSER</span>
                 <h3>Fånga känslan</h3>
