@@ -2,6 +2,14 @@ import './App.css'
 
 const instagramUrl = 'https://www.instagram.com/melanie.event/'
 
+function ArrowIcon() {
+  return (
+    <svg className="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+      <path d="M5 19 19 5M7 5h12v12" />
+    </svg>
+  )
+}
+
 function Brand({ small = false }: { small?: boolean }) {
   return (
     <span className={`brand${small ? ' brand--small' : ''}`}>
@@ -27,7 +35,7 @@ function App() {
           ))}
         </nav>
         <a className="header-instagram" href={instagramUrl} target="_blank" rel="noreferrer">
-          Instagram <span aria-hidden="true">↗</span>
+          Instagram <ArrowIcon />
         </a>
       </header>
 
@@ -49,7 +57,7 @@ function App() {
           <div className="hero-divider" aria-hidden="true"><span>✧</span></div>
           <p className="status">Personlig dekoration. Oförglömliga ögonblick.</p>
           <a className="instagram-button" href="#inspiration">
-            Upptäck vår värld <span aria-hidden="true">↗</span>
+            Upptäck vår värld <ArrowIcon />
           </a>
           <p className="instagram-handle">@melanie.event</p>
         </section>
@@ -90,7 +98,7 @@ function App() {
           <div className="closing-note">
             <span className="closing-star" aria-hidden="true">✧</span>
             <h2>Varje detalj har en tanke.<br /><em>Varje firande en egen historia.</em></h2>
-            <a className="text-link" href={instagramUrl} target="_blank" rel="noreferrer">Se mer på Instagram <span aria-hidden="true">↗</span></a>
+            <a className="text-link" href={instagramUrl} target="_blank" rel="noreferrer">Se mer på Instagram <ArrowIcon /></a>
           </div>
         </section>
       </main>
@@ -101,7 +109,7 @@ function App() {
           <p>Små detaljer. Stora minnen.</p>
         </div>
         <p className="footer-location">Evenemang med omtanke<br /><span>Stockholm, Sverige</span></p>
-        <a className="footer-social" href={instagramUrl} target="_blank" rel="noreferrer">Följ oss på Instagram <span aria-hidden="true">↗</span></a>
+        <a className="footer-social" href={instagramUrl} target="_blank" rel="noreferrer">Följ oss på Instagram <ArrowIcon /></a>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} Melanie Events</span>
           <span>Skapat med kärlek</span>
